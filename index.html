@@ -30,27 +30,69 @@
         </ul>
     </nav>
     <!-- Cabecera -->
-    <header id="header">
-        <!-- Encabezado Principal -->
-        <div>
-            <h1>Responsive</h1>
-            <p>Web Design</p>
+    <header id="header" class="carousel slide | position-relative">
+        <div class="carousel-indicators">
+            <button class="active"
+                data-bs-target="#header" 
+                data-bs-slide-to="0" >
+            </button>
+            <button 
+                data-bs-target="#header" 
+                data-bs-slide-to="1">
+            </button>
+            <button 
+                data-bs-target="#header" 
+                data-bs-slide-to="2">
+            </button>
         </div>
         <!-- Galeria de Imagenes -->
-        <div>
-            <ul>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-                <li>
-
-                </li>
-            </ul>
-            <button></button>
-            <button></button>
+        <ul class="carousel-inner | list-unstyled">
+            <li class="carousel-item active">
+                <img class="w-100 | d-md-none" 
+                    src="assets/bg/header-sm-01.jpg" 
+                    alt="bg-smartphone-01">
+                <img class="w-100 d-none d-md-block d-lg-none" 
+                    src="assets/bg/header-md-01.jpg" 
+                    alt="bg-tablet-01">
+                <img class="w-100 d-none d-lg-block" 
+                    src="assets/bg/header-lg-01.jpg" 
+                    alt="bg-desktop-01">
+            </li>
+            <li class="carousel-item">
+                <img class="w-100 | d-md-none" 
+                    src="assets/bg/header-sm-02.jpg" 
+                    alt="bg-smartphone-02">
+                <img class="w-100 d-none d-md-block d-lg-none" 
+                    src="assets/bg/header-md-02.jpg" 
+                    alt="bg-tablet-02">
+                <img class="w-100 d-none d-lg-block" 
+                    src="assets/bg/header-lg-02.jpg" 
+                    alt="bg-desktop-02">
+            </li>
+            <li class="carousel-item">
+                <img class="w-100 | d-md-none" 
+                    src="assets/bg/header-sm-03.jpg" 
+                    alt="bg-smartphone-02">
+                <img class="w-100 d-none d-md-block d-lg-none" 
+                    src="assets/bg/header-md-03.jpg" 
+                    alt="bg-tablet-02">
+                <img class="w-100 d-none d-lg-block" 
+                    src="assets/bg/header-lg-03.jpg" 
+                    alt="bg-desktop-02">
+            </li>
+        </ul>
+        <button class="carousel-control-prev | bi-chevron-left" 
+            data-bs-target="#header" 
+            data-bs-slide="prev">
+        </button>
+        <button class="carousel-control-next | bi-chevron-right" 
+            data-bs-target="#header" 
+            data-bs-slide="next">
+        </button>
+        <!-- Encabezado Principal -->
+        <div class="position-absolute top-50 start-50 translate-middle | text-light text-center">
+            <h1 class="display-1 | fw-bold text-uppercase">Responsive Design</h1>
+            <p class="h3"><strong>Presenta: </strong> Cristian Racedo</p>
         </div>
     </header>
     <!-- Contenido Principal -->
