@@ -99,31 +99,43 @@
     <main>
 
     </main>
-    <!-- Seccion de Contacto -->
-    <section id="contact">
+    <!-- Pie de Pagina -->
+    <section id="footer" class="position-relative">
         <!-- Mapa de Contacto -->
-        <iframe 
+        <iframe class="position-absolute top-0 start-0 | w-100 h-100 | opacity-75"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.9925584527174!2d-58.37620362245415!3d-34.60243211740226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3n%20IT!5e0!3m2!1ses!2sar!4v1596181391934!5m2!1ses!2sar" 
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
 		</iframe>
         <!-- Formulario de Contacto -->
-        <form id="contact" action="scripts/contact.php" method="POST">
+        <form class="position-relative | container col col-md-8 col-lg-6 my-5 mx-auto" 
+            id="contact" 
+            action="scripts/contact.php" 
+            method="POST">
             <h2>Hacenos tu consulta</h2>
+
         </form>
         <!-- Redes sociales -->
-        <div class="social">
-            <a href="https://facebook.com"></a>
-            <a href="https://instagram.com"></a>
-            <a href="https://linkedin.com"></a>
-            <a href="https://github.com/c215714n/Responsive"></a>
+        <div class="d-flex justify-content-center | position-relative | col-md-6 my-3 mx-auto | fs-1">
+            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-facebook"  
+                href="https://facebook.com"
+                target="_blank"></a>
+            <a class="btn-outline-danger  | mx-1 rounded px-2 | bi-instagram" 
+                href="https://instagram.com"
+                target="_blank"></a>
+            <a class="btn-outline-success | mx-1 rounded px-2 | bi-whatsapp"  
+                href="https://api.whatsapp.com/send?phone=1156591548&text=%22Buenos%20dias,%20necesito%20un%20presupuesto%22"
+                target="_blank"></a>
+            <a class="btn-outline-primary | rounded px-2 | bi-linkedin"  
+                href="https://linkedin.com"
+                target="_blank"></a>
         </div>
     </section>
     <!-- Pie de Pagina -->
-    <footer id="footer">
-        <p>
-            &copy;2022 Todos los derechos reservados |
-            <button>Cristian Racedo</button>
+    <footer id="footer" class="position-relative">
+        <p class="position-relative | btn-dark | m-0 p-3 | text-center">
+            &copy;2022 Todos los derechos reservados | 
+            <a class="btn btn-outline-light border-0 | py-0 p-1" href="mailto:cristiandracedo@hotmail.com">Cristian Racedo</a> 
             &amp; Compañia
         </p>
     </footer>
