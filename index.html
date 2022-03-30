@@ -108,64 +108,82 @@
             referrerpolicy="no-referrer-when-downgrade">
 		</iframe>
         <!-- Formulario de Contacto -->
-        <form class="position-relative | d-grid gap-3 container col-md-8 col-lg-6 | bg-light shadow | mt-5 mx-auto rounded p-3" 
+        <form class="position-relative | d-grid gap-3 container col-md-8 col-lg-6 | bg-light shadow | mt-5 mx-auto rounded p-3 | was-validated" 
             id="contact" 
             action="scripts/contact.php" 
             method="POST">
             <h2>Hacenos tu consulta</h2>
+            <!-- Nombre -->
             <fieldset class="form-floating">
                 <input class="form-control" 
                     id="contact_name"
                     name="contact_name"
                     type="text" 
-                    placeholder="Nombre(*): Cristian Racedo">
-                <label for="">Ingrese su Nombre</label>
+                    pattern="[a-z A-Z ñÑ]{3,50}"
+                    maxlength="50"
+                    placeholder="Nombre(*): Cristian Racedo"
+                    required>
+                <label for="contact_name">Ingrese su Nombre</label>
                 <div class="valid-feedback">
-                    
+                    Espero que hayas puesto tu verdadero nombre, 
+                    ya que nos contactaremos contigo.
                 </div>
                 <div class="invalid-feedback">
-
+                    Escriba su nombre solo con letras, 
+                    este debe poseer entre 3 y 50 caracteres
                 </div>
             </fieldset>
+            <!-- Correo -->
             <fieldset class="form-floating">
                 <input class="form-control" 
                     id="contact_email"
                     name="contact_email"
                     type="email" 
-                    placeholder="Correo(*): cristiandracedo@hotmail.com">
-                <label for="">Ingrese su Correo</label>
+                    placeholder="Correo(*): cristiandracedo@hotmail.com"
+                    required>
+                <label for="contact_email">Ingrese su Correo</label>
                 <div class="valid-feedback">
-
+                    La direccion parece ser correcta,  
+                    responderemos a este correo tras recibir tu consulta
                 </div>
                 <div class="invalid-feedback">
-
+                    Ingrese un correo con al menos 8 caracteres,
+                    respetando el formato "usuario@servidor"
                 </div>
             </fieldset>
+            <!-- Telefono -->
             <fieldset class="form-floating">
                 <input class="form-control" 
                     id="contact_phone"
                     name="contact_phone"
                     type="tel" 
-                    placeholder="Telefono(*): (5411)5659-1548">
-                <label for="">Ingrese su Telefono</label>
+                    pattern="\d{6,18}|[\(]\d{2,6}[\)]{1,2}\d{3,6}[\-]\d{3,6}"
+                    placeholder="Telefono(*): (5411)5659-1548"
+                    required>
+                <label for="contact_phone">Ingrese su Telefono</label>
                 <div class="valid-feedback">
-
+                    El formato ha sido validado, tambien podias haber ingresado solamente digitos
                 </div>
                 <div class="invalid-feedback">
-
+                    Utilice un guion cada 3 a 6 digitos, 
+                    coloque la caracteristica entre parentesis
                 </div>
             </fieldset>
+            <!-- Consulta -->
             <fieldset class="form-floating">
                 <textarea class="form-control" 
                     id="contact_consult"
                     name="contact_consult"
-                    placeholder="Consulta(*): Buenas, necesito un presupuesto"></textarea>
+                    minlength="20"
+                    maxlength="200"
+                    placeholder="Consulta(*): Buenas, necesito un presupuesto"
+                    required></textarea>
                 <label for="">Ingrese su Consulta</label>
                 <div class="valid-feedback">
-
+                    Felicitaciones, no vamos a decirte que ni como preguntar
                 </div>
                 <div class="invalid-feedback">
-
+                    Debes escribir una consulta que posea entre 20 y 200 caracteres.
                 </div>
             </fieldset>
             <button class="btn btn-lg btn-outline-primary | ms-auto p-1 px-4 | text-uppercase">Enviar</button>
@@ -181,7 +199,7 @@
             <a class="btn-outline-success | mx-1 rounded px-2 | bi-whatsapp"  
                 href="https://api.whatsapp.com/send?phone=1156591548&text=%22Buenos%20dias,%20necesito%20un%20presupuesto%22"
                 target="_blank"></a>
-            <a class="btn-outline-primary | rounded px-2 | bi-linkedin"  
+            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-linkedin"  
                 href="https://linkedin.com"
                 target="_blank"></a>
         </div>
