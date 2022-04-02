@@ -99,14 +99,14 @@
     <main>
 
     </main>
-    <!-- Pie de Pagina -->
-    <section id="footer" class="position-relative | bg-secondary | pt-3">
+    <!-- Seccion de Contacto -->
+    <section id="contact" class="position-relative | bg-dark | pt-5">
         <!-- Mapa de Contacto -->
         <iframe class="position-absolute top-0 start-0 | w-100 h-100 | opacity-75"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.9925584527174!2d-58.37620362245415!3d-34.60243211740226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccacc473596c3%3A0x568d6d5f7f1f535d!2sEducaci%C3%B3n%20IT!5e0!3m2!1ses!2sar!4v1596181391934!5m2!1ses!2sar" 
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade">
-		</iframe>
+        </iframe>
         <!-- Formulario de Contacto -->
         <form class="position-relative | d-grid gap-3 container col-md-8 col-lg-6 | bg-light shadow | mt-5 mx-auto rounded p-3 | was-validated" 
             id="contact" 
@@ -162,11 +162,12 @@
                     required>
                 <label for="contact_phone">Ingrese su Telefono</label>
                 <div class="valid-feedback">
-                    El formato ha sido validado, tambien podias haber ingresado solamente digitos
+                    El formato ha sido validado, 
+                    tambien podrias haber ingresado solamente digitos
                 </div>
                 <div class="invalid-feedback">
-                    Utilice un guion cada 3 a 6 digitos, 
-                    coloque la caracteristica entre parentesis
+                    Coloque un guion o espacio cada 3 a 6 digitos, 
+                    y la caracteristica entre parentesis
                 </div>
             </fieldset>
             <!-- Consulta -->
@@ -180,7 +181,7 @@
                     required></textarea>
                 <label for="">Ingrese su Consulta</label>
                 <div class="valid-feedback">
-                    Felicitaciones, no vamos a decirte que ni como preguntar
+                    No vamos a decirte que preguntar, ni como hacerlo ¡felicitaciones!
                 </div>
                 <div class="invalid-feedback">
                     Debes escribir una consulta que posea entre 20 y 200 caracteres.
@@ -189,28 +190,73 @@
             <button class="btn btn-lg btn-outline-primary | ms-auto p-1 px-4 | text-uppercase">Enviar</button>
         </form>
         <!-- Redes sociales -->
-        <div class="d-flex justify-content-center | position-relative | col-md-6 my-3 mx-auto | fs-1">
-            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-facebook"  
-                href="https://facebook.com"
+        <div class="position-relative | d-flex justify-content-center flex-wrap bg-gradient | p-3 | fs-1">
+            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-facebook"
+                href="https://www.facebook.com/RacedoCristian"
                 target="_blank"></a>
-            <a class="btn-outline-danger  | mx-1 rounded px-2 | bi-instagram" 
-                href="https://instagram.com"
+            <a class="btn-outline-danger | mx-1 rounded px-2 | bi-instagram"
+                href="https://www.instagram.com/racedo.cristiandamian/"
+                title="Seguinos en instagram"
                 target="_blank"></a>
-            <a class="btn-outline-success | mx-1 rounded px-2 | bi-whatsapp"  
+            <a class="btn-outline-success | mx-1 rounded px-2 | bi-whatsapp"
                 href="https://api.whatsapp.com/send?phone=1156591548&text=%22Buenos%20dias,%20necesito%20un%20presupuesto%22"
+                title="Envianos un Whatsapp"
                 target="_blank"></a>
-            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-linkedin"  
-                href="https://linkedin.com"
+            <a class="btn-outline-info | mx-1 rounded px-2 | bi-twitter"
+                href="https://twitter.com/Racedo_Cristian" 
+                title="Seguinos en twitter"
+                target="_blank"></a>
+            <a class="btn-outline-danger | mx-1 rounded px-2 | bi-youtube"
+                href="https://www.youtube.com/user/CR15T14ND4M14N/" 
+                title="Suscribite al canal de YouTube"
+                target="_blank"></a>
+            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-linkedin" 
+                href="https://www.linkedin.com/in/racedocristian/"
+                title="Seguinos en Linkedin"
                 target="_blank"></a>
         </div>
     </section>
     <!-- Pie de Pagina -->
-    <footer id="footer" class="position-relative">
-        <p class="position-relative | btn-dark | m-0 p-3 | text-center">
+    <footer id="footer" class="position-relative | text-light bg-dark bg-gradient | p-3 | text-center">
+        <!-- Derechos de Autor -->
+        <p class="m-0 opacity-75"> 
             &copy;2022 Todos los derechos reservados | 
-            <a class="btn btn-outline-light border-0 | py-0 p-1" href="mailto:cristiandracedo@hotmail.com">Cristian Racedo</a> 
+            <button class="btn btn-outline-light border-0 | py-0 p-1"
+                data-bs-target="#copyright"
+                data-bs-toggle="modal">Cristian Racedo
+            </button> 
             &amp; Compañia
         </p>
+        <!-- Informacion de Contacto -->
+        <div id="copyright" class="modal fade">
+            <section class="modal-dialog modal-content | text-start text-secondary">
+                <header class="modal-header pb-1">
+                    <h2 class="h3">Buenas ¿como estas?</h2>
+                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                </header>
+                <div class="modal-body">
+                    <p>
+                        Mi nombre es <strong>Cristian Racedo</strong> y mis origenes como desarrollador se remontan al <em>año 2012 cuando realice mis primeros proyectos</em> y descubri mi pasion por esta actividad.
+                    </p>
+                    <p>
+                        En mis ratos libres ejerzo como <strong>diseñador freelance</strong> y <strong>técnico informático</strong>, mientras pretendo mejorar mis conocimientos en programación realizando <em>cursos a distancia.</em> 
+                    </p>
+                    <p>
+                        También quiero aumentar mi experiencia trabajando con servidores, principalmente para mejorar mis conocimientos en el campo de <strong>redes y seguridad informática.</strong> 
+                    </p>
+                    <p>
+                        Recorda que podes realizar cualquier consulta que necesites, ya sea completando el formulario o abriendo tu correo electronico desde esta misma ventana. 
+                    </p>
+                    <p>
+                        Muchas gracias por tu interes y encantado de conocerte
+                    </p>
+                </div>
+                <footer class="modal-footer">
+                    <a class="btn btn-danger" data-bs-dismiss="modal">Cancelar</a>
+                    <a class="btn btn-success" href="mailto:cristiandracedo@hotmail.com">Abrir correo</a>
+                </footer>
+            </section>
+        </div>
     </footer>
     <!-- Bootstrap JS -->
     <script src="scripts/bootstrap.bundle.js"></script>
