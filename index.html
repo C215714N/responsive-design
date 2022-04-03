@@ -91,7 +91,7 @@
         </button>
         <!-- Encabezado Principal -->
         <div class="position-absolute top-50 start-50 translate-middle | text-light text-center">
-            <h1 class="display-1 | fw-bold text-uppercase">Responsive Design</h1>
+            <h1 class="display-5 | fw-bold text-uppercase">Responsive Design</h1>
             <p class="h3"><strong>Presenta: </strong> Cristian Racedo</p>
         </div>
     </header>
@@ -114,7 +114,7 @@
                     data-bs-toggle="collapse">
                     Ventajas
                 </h3>
-                <ul id="bs-advantages" class="accordion-item collapse | list-group | mb-3">
+                <ul id="bs-advantages" class="accordion-item collapse | list-group list-group | mb-3">
                     <li class="list-group-item">Se puede diseñar un sitio combinandolo con HTML, CSS y Javascript.</li>
                     <li class="list-group-item">Incluye un sistema de grillas útil para maquetar por columnas.</li>
                     <li class="list-group-item">Sus plantillas son de sencilla adaptación responsive.</li>
@@ -127,13 +127,73 @@
                     data-bs-toggle="collapse">
                     Desventajas
                 </h3>
-                <ul id="bs-disadvantages" class="accordion-item collapse | list-group | mb-3">
+                <ul id="bs-disadvantages" class="accordion-item collapse | list-group list-group | mb-3">
                     <li class="list-group-item">Incluir el framework en un trabajo iniciado puede ser tedioso y molesto.</li>
                     <li class="list-group-item">Es complicado cambiar de versión si realizaron modificaciones profundas.</li>
                     <li class="list-group-item">No es ligero y para algunas funcionalidades se debe usar Javascript y jQuery.</li>
                     <li class="list-group-item">Debe adaptarse el diseño a un sistema de grillas de 12 columnas.</li>
                     <li class="list-group-item">Por defecto trae anchos, márgenes, altos de línea y realiza cambios específicos.</li>
                 </ul>
+            </section>
+            <section>
+                <header>
+                    <h2>Responsive Breakpoints</h2>
+                    <p>Dispositivos y Media Queries</p>
+                </header>
+                <p>
+                    Los <strong>Breakpoints</strong> corresponden a <em>medidas de anchura en las que se realizan cambios para el diseño responsive</em> y aplican los estilos CSS concretos. Es un valor de ancho, <em>generalmente en pixeles</em>, que se toma en cuenta para fijar el límite entre dos dispositivos. Ayudan a <strong>planificar y adaptar un diseño base a cada dispositivo</strong>, pues tiene una dimensión a tomar en cuenta sobre la que trabajar.
+                </p>
+                <div class="table-responsive">
+                    <table class="table table-striped table-dark">
+                        <caption>Tamaños de pantalla</caption>
+                        <thead>
+                            <tr class="">
+                                <th>break-point</th>
+                                <th>screen-width</th>
+                                <th>max-width</th>
+                                <th class="d-none d-sm-table-cell">device-type</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>xs</td>
+                                <td>-</td>
+                                <td>100%</td>
+                                <td class="d-none d-sm-table-cell">smart<span class="d-inline-block">watch</span></td>
+                            </tr>
+                            <tr>
+                                <td>sm</td>
+                                <td>&GreaterEqual;576</td>
+                                <td>540px</td>
+                                <td class="d-none d-sm-table-cell">smart<span class="d-inline-block">phone</span></td>
+                            </tr>
+                            <tr>
+                                <td>md</td>
+                                <td>&GreaterEqual;768</td>
+                                <td>720px</td>
+                                <td class="d-none d-sm-table-cell">tablet</td>
+                            </tr>
+                            <tr>
+                                <td>lg</td>
+                                <td>&GreaterEqual;992</td>
+                                <td>960px</td>
+                                <td class="d-none d-sm-table-cell">laptop</td>
+                            </tr>
+                            <tr>
+                                <td>xl</td>
+                                <td>&GreaterEqual;1200</td>
+                                <td>1140px</td>
+                                <td class="d-none d-sm-table-cell">hd desktop</td>
+                            </tr>
+                            <tr>
+                                <td>xxl</td>
+                                <td>&GreaterEqual;1400</td>
+                                <td>1320px</td>
+                                <td class="d-none d-sm-table-cell">smart tv</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </section>
         </div>
     </main>
