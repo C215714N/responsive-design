@@ -81,11 +81,11 @@
                     alt="bg-desktop-02">
             </li>
         </ul>
-        <button class="carousel-control-prev | bi-chevron-left" 
+        <button class="carousel-control-prev | fs-2 | bi-chevron-left" 
             data-bs-target="#header" 
             data-bs-slide="prev">
         </button>
-        <button class="carousel-control-next | bi-chevron-right" 
+        <button class="carousel-control-next | fs-2 | bi-chevron-right" 
             data-bs-target="#header" 
             data-bs-slide="next">
         </button>
@@ -96,8 +96,46 @@
         </div>
     </header>
     <!-- Contenido Principal -->
-    <main>
-
+    <main class="container row mx-auto p-3">
+        <div class="col-lg-8 me-3 | p-3 | rounded shadow-lg">
+            <section>
+                <header>
+                    <h2>Introduccion a Bootstrap</h2>
+                    <p>Responsive Web Design</p>
+                </header>
+                <p>
+                    <strong>Bootstrap</strong> es un Framework originalmente <em>creado por Twitter</em>, que permite crear <em>interfaces web con CSS y JavaScript</em>, cuya particularidad es la de adaptar la interfaz del sitio web al tamaño del dispositivo en que se visualice. Es decir, el sitio web <strong>se adapta automáticamente al tamaño de una PC, una Tablet u otro dispositivo.</strong>
+                </p>
+                <p>
+                    Este <strong>Framework</strong> posee definiciones de <em>media queries y porcentajes en su CSS para hacer una web Responsive.</em> Además, se basa en la simplicidad de sus interfaces, lo cual es una tendencia del mercado, en las que tiende a diseño plano, botones grandes, etc… <strong>para facilitar la usabilidad en los dispositivos más pequeño, atendiendo a la Experiencia de Usuario.</strong>
+                </p>
+                <h3 class="accordion-button collapsed"
+                    data-bs-target="#bs-advantages" 
+                    data-bs-toggle="collapse">
+                    Ventajas
+                </h3>
+                <ul id="bs-advantages" class="accordion-item collapse | list-group | mb-3">
+                    <li class="list-group-item">Se puede diseñar un sitio combinandolo con HTML, CSS y Javascript.</li>
+                    <li class="list-group-item">Incluye un sistema de grillas útil para maquetar por columnas.</li>
+                    <li class="list-group-item">Sus plantillas son de sencilla adaptación responsive.</li>
+                    <li class="list-group-item">Se integra facilmente con bibliotecas de JavaScript.</li>
+                    <li class="list-group-item">Cuenta con una documentación completa para su aprendizaje.</li>
+                    <li class="list-group-item">Facilita el diseño de interfaces y además incluye una plantilla optimizada.</li>
+                </ul>
+                <h3 class="accordion-button collapsed"
+                    data-bs-target="#bs-disadvantages" 
+                    data-bs-toggle="collapse">
+                    Desventajas
+                </h3>
+                <ul id="bs-disadvantages" class="accordion-item collapse | list-group | mb-3">
+                    <li class="list-group-item">Incluir el framework en un trabajo iniciado puede ser tedioso y molesto.</li>
+                    <li class="list-group-item">Es complicado cambiar de versión si realizaron modificaciones profundas.</li>
+                    <li class="list-group-item">No es ligero y para algunas funcionalidades se debe usar Javascript y jQuery.</li>
+                    <li class="list-group-item">Debe adaptarse el diseño a un sistema de grillas de 12 columnas.</li>
+                    <li class="list-group-item">Por defecto trae anchos, márgenes, altos de línea y realiza cambios específicos.</li>
+                </ul>
+            </section>
+        </div>
     </main>
     <!-- Seccion de Contacto -->
     <section id="contact" class="position-relative | bg-dark | pt-5">
