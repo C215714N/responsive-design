@@ -30,7 +30,7 @@
         </ul>
     </nav>
     <!-- Cabecera -->
-    <header id="header" class="carousel slide | position-relative">
+    <header id="header" class="carousel slide">
         <div class="carousel-indicators">
             <button class="active"
                 data-bs-target="#header" 
@@ -96,9 +96,9 @@
         </div>
     </header>
     <!-- Contenido Principal -->
-    <main class="container row mx-auto p-3">
-        <div class="col-lg-8 me-3 | p-3 | rounded shadow-lg">
-            <section>
+    <main class="container-md row mx-auto">
+        <div class="col-lg-8 me-lg-3 p-0">
+            <section class="my-3 rounded p-4 shadow-lg">
                 <header>
                     <h2>Introduccion a Bootstrap</h2>
                     <p>Responsive Web Design</p>
@@ -135,7 +135,7 @@
                     <li class="list-group-item">Por defecto trae anchos, márgenes, altos de línea y realiza cambios específicos.</li>
                 </ul>
             </section>
-            <section>
+            <section class="my-3 rounded p-4 shadow-lg">
                 <header>
                     <h2>Responsive Breakpoints</h2>
                     <p>Dispositivos y Media Queries</p>
@@ -194,6 +194,114 @@
                         </tbody>
                     </table>
                 </div>
+            </section>
+            <section class="my-3 rounded p-4 shadow-lg">
+                <header>
+                    <h2>Sistema de Grillas</h2>
+                    <p>Flexbox, Filas y Columnas</p>
+                </header>
+                <p>
+                    Una <strong>Grilla</strong> es una <em>estructura conformada por líneas verticales y horizontales que se intersectan</em>. En el diseño web <strong>sirven para colocar y alinear contenido</strong> de modo que el layout no luzca desordenado y hasta cierto punto <em>para guiar la vista de los usuarios</em>.
+                </p>
+                <p>
+                    Bootstrap posee un modelo de <strong>12 columnas</strong> <em>invisibles para el usuario</em>, que facilita el diseño y desarrollo de aplicaciones y sitios web. 
+                    Son un punto de partida que permiten diagramar la página con el uso de módulos utilizando la clase <strong>col</strong>, opcionalmente el breakpoint, y el numero de columnas a ocupar.
+                </p>
+                <h3 class="h4">
+                    Columnas 
+                    <span class="d-sm-none">xs</span>
+                    <span class="d-none d-sm-inline d-md-none">Small</span>
+                    <span class="d-none d-md-inline d-lg-none">Medium</span>
+                    <span class="d-none d-lg-inline">Large</span>
+                    devices
+                </h3>
+                <p>
+                    El sistema de grillas se basa en <strong>contenedores flexibles</strong> que se escalan dependiendo del tamaño del dispositivo. Para ajustar los contenedores  disponemos de diferentes clases: 
+                </p>
+                <ul>
+                    <li><strong>.container</strong> el contenido aparece centrado y con un ancho fijo.</li>
+                    <li><strong>.container-fluid</strong> el contenido ocupa todo el ancho disponible (100%).</li>
+                </ul>
+                <ul class="row | list-unstyled | px-2">   
+                    <li class="col-sm-6 col-md-4 col-lg-2 | d-flex justify-content-center | border p-2">
+                        col
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-lg-2 | d-flex justify-content-center | border p-2">
+                        col
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-lg-2 | d-flex justify-content-center | border p-2">
+                        col
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-lg-2 | d-flex justify-content-center | border p-2">
+                        col
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-lg-2 | d-flex justify-content-center | border p-2">
+                        col
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col-sm-6 col-md-4 col-lg-2 | d-flex justify-content-center | border p-2">
+                        col
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                </ul>
+                <h3 class="h4">Desplazar columnas</h3>
+                <p>
+                    En caso que necesitemos Compensar un espacio aumentando la separacion entre columnas o simplemente quisieramos desplazarla hacia la derecha, podemos utilizar la clase <strong>offset</strong> que basicamente aumenta el margen izquierdo en un valor igual al porcentaje del numero de columna seleccionado.
+                </p>
+                <ul class="row | list-unstyled | px-2">   
+                    <li class="col | offset-sm-6 offset-md-4 offset-lg-2 | d-flex | border p-2">
+                        offset
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col | offset-sm-6 offset-md-4 offset-lg-2 | d-flex | border p-2">
+                        offset
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col | offset-sm-6 offset-md-4 offset-lg-2 | d-flex | border p-2">
+                        offset
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col | offset-sm-6 offset-md-4 offset-lg-2 | d-flex | border p-2">
+                        offset
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col | offset-sm-6 offset-md-4 offset-lg-2 | d-flex | border p-2">
+                        offset
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                    <li class="col | offset-sm-6 offset-md-4 offset-lg-2 | d-flex | border p-2">
+                        offset
+                        <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
+                        <span class="d-none d-md-inline d-lg-none">-md-4</span> 
+                        <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                </ul>
             </section>
         </div>
     </main>
