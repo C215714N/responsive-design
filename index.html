@@ -96,9 +96,9 @@
         </div>
     </header>
     <!-- Contenido Principal -->
-    <main class="container-md row mx-auto">
-        <div class="col-lg-8 me-lg-3 p-0">
-            <section class="my-3 rounded p-4 shadow-lg">
+    <main class="container-md row | mb-5 mx-auto">
+        <div class="tab-content col-lg-8 order-lg-first | me-lg-3 p-0">
+            <section id="intro-section" class="tab-pane fade show active | my-3 rounded p-4 shadow">
                 <header>
                     <h2>Introduccion a Bootstrap</h2>
                     <p>Responsive Web Design</p>
@@ -135,7 +135,7 @@
                     <li class="list-group-item">Por defecto trae anchos, márgenes, altos de línea y realiza cambios específicos.</li>
                 </ul>
             </section>
-            <section class="my-3 rounded p-4 shadow-lg">
+            <section id="responsive-section" class="tab-pane fade my-3 rounded p-4 shadow">
                 <header>
                     <h2>Responsive Breakpoints</h2>
                     <p>Dispositivos y Media Queries</p>
@@ -195,7 +195,7 @@
                     </table>
                 </div>
             </section>
-            <section class="my-3 rounded p-4 shadow-lg">
+            <section id="grid-section" class="tab-pane fade | overflow-auto | my-3 rounded p-4 shadow">
                 <header>
                     <h2>Sistema de Grillas</h2>
                     <p>Flexbox, Filas y Columnas</p>
@@ -304,6 +304,31 @@
                 </ul>
             </section>
         </div>
+        <aside class="col-lg order-first | my-3 rounded p-4 | shadow">
+            <header>
+                <h2>Tabla de Contenidos</h2>
+            </header>
+            <div class="list-group list-group-flush">
+                <a  id="intro-menu" 
+                    class="list-group-item list-group-item-action active"
+                    href="#intro-section"
+                    data-bs-toggle="list">
+                    Introduccion a Bootstrap
+                </a>
+                <a  id="responsive-menu"
+                    class="list-group-item list-group-item-action"
+                    href="#responsive-section"
+                    data-bs-toggle="list">
+                    Responsive Breakpoints
+                </a>
+                <a id="grid-menu" 
+                    class="list-group-item list-group-item-action"
+                    href="#grid-section"
+                    data-bs-toggle="list">
+                    Sistema de Grillas
+                </a>
+            </div>
+        </aside>
     </main>
     <!-- Seccion de Contacto -->
     <section id="contact" class="position-relative | bg-dark | pt-5">
@@ -314,8 +339,7 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <!-- Formulario de Contacto -->
-        <form class="position-relative | d-grid gap-3 container col-md-8 col-lg-6 | bg-light shadow | mt-5 mx-auto rounded p-3 | was-validated" 
-            id="contact" 
+        <form class="position-relative | d-grid gap-3 container col-md-8 col-lg-6 | bg-light shadow | mt-5 mx-auto rounded p-3 | was-validated"  
             action="scripts/contact.php" 
             method="POST">
             <h2>Hacenos tu consulta</h2>
