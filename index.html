@@ -114,7 +114,7 @@
                     data-bs-toggle="collapse">
                     Ventajas
                 </h3>
-                <ul id="bs-advantages" class="accordion-item collapse | list-group list-group | mb-3">
+                <ul id="bs-advantages" class="accordion-item collapse | list-group | mb-3">
                     <li class="list-group-item">Se puede diseñar un sitio combinandolo con HTML, CSS y Javascript.</li>
                     <li class="list-group-item">Incluye un sistema de grillas útil para maquetar por columnas.</li>
                     <li class="list-group-item">Sus plantillas son de sencilla adaptación responsive.</li>
@@ -127,7 +127,7 @@
                     data-bs-toggle="collapse">
                     Desventajas
                 </h3>
-                <ul id="bs-disadvantages" class="accordion-item collapse | list-group list-group | mb-3">
+                <ul id="bs-disadvantages" class="accordion-item collapse | list-group | mb-3">
                     <li class="list-group-item">Incluir el framework en un trabajo iniciado puede ser tedioso y molesto.</li>
                     <li class="list-group-item">Es complicado cambiar de versión si realizaron modificaciones profundas.</li>
                     <li class="list-group-item">No es ligero y para algunas funcionalidades se debe usar Javascript y jQuery.</li>
@@ -135,7 +135,7 @@
                     <li class="list-group-item">Por defecto trae anchos, márgenes, altos de línea y realiza cambios específicos.</li>
                 </ul>
             </section>
-            <section id="responsive-section" class="tab-pane fade my-3 rounded p-4 shadow">
+            <section id="responsive-section" class="tab-pane fade | my-3 rounded p-4 shadow">
                 <header>
                     <h2>Responsive Breakpoints</h2>
                     <p>Dispositivos y Media Queries</p>
@@ -195,7 +195,7 @@
                     </table>
                 </div>
             </section>
-            <section id="grid-section" class="tab-pane fade | overflow-auto | my-3 rounded p-4 shadow">
+            <section id="grid-section" class="tab-pane fade | my-3 rounded p-4 shadow">
                 <header>
                     <h2>Sistema de Grillas</h2>
                     <p>Flexbox, Filas y Columnas</p>
@@ -420,7 +420,7 @@
             <button class="btn btn-lg btn-outline-primary | ms-auto p-1 px-4 | text-uppercase">Enviar</button>
         </form>
         <!-- Redes sociales -->
-        <div class="position-relative | d-flex justify-content-center flex-wrap bg-gradient | p-3 | fs-1">
+        <section class="position-relative | d-flex justify-content-center flex-wrap | bg-light bg-gradient opacity-75 | mt-3 p-3 pb-5 | fs-1">
             <a class="btn-outline-primary | mx-1 rounded px-2 | bi-facebook"
                 href="https://www.facebook.com/RacedoCristian"
                 target="_blank"></a>
@@ -447,9 +447,71 @@
         </div>
     </section>
     <!-- Pie de Pagina -->
-    <footer id="footer" class="position-relative | text-light bg-dark bg-gradient | p-3 | text-center">
+    <footer id="footer" class="position-relative | text-light bg-dark | p-2 | text-center">
+        <!-- Mapa del Sitio -->
+        <button class="position-absolute top-0 start-50 translate-middle | border-0 rounded-top p-2 px-3 pb-4 | text-light bg-dark"
+            data-bs-target="#sitemap"
+            data-bs-toggle="collapse">
+            mas info
+        </button>
+        <section id="sitemap" class="accordion-item | container row | text-start bg-dark | mt-3 mx-auto border-0 | collapse">
+            <div class="col-sm-6 col-md-4 col-lg | d-grid | mt-3">
+                <h2 class="h6 | border-bottom">Sitio Web</h2>
+                <a class="link-light text-decoration-none | bi-house-fill" href="#" target="_blank"> Inicio</a>
+                <a class="link-light text-decoration-none | bi-newspaper" href="about.html" target="_blank"> Acerca</a>
+                <a class="link-light text-decoration-none | bi-image" href="gallery.html" target="_blank"> Galeria</a>
+                <a class="link-light text-decoration-none | bi-person-circle" href="#contact" target="_blank"> Contacto</a>
+                <a class="link-light text-decoration-none | bi-envelope" href="mailto:cristiandracedo@hotmail.com" target="_blank"> Correo</a>
+                <a class="link-light text-decoration-none | bi-whatsapp" href="https://api.whatsapp.com/send?phone=1156591548&text=Buenas, mi consulta es ..." target="_blank"> Whatsapp</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg | d-grid | mt-3">
+                <h2 class="h6 | border-bottom">Comunidad</h2>
+                <a class="link-light text-decoration-none | bi-discord" href="https://discord.gg/h8B9EzrSXD" target="_blank"> Discord</a>
+                <a class="link-light text-decoration-none | bi-disc" href="https://opencollective.com/bootstrap" target="_blank"> Collective</a>
+                <a class="link-light text-decoration-none | bi-reddit" href="https://www.reddit.com/r/bootstrap/" target="_blank"> Reddit</a>
+                <a class="link-light text-decoration-none | bi-slack" href="https://bootstrap-slack.herokuapp.com/" target="_blank"> Slack</a>
+                <a class="link-light text-decoration-none | bi-stack-overflow" href="https://stackoverflow.com/questions/tagged/bootstrap-5" target="_blank"> Stack Overflow</a>
+                <a class="link-light text-decoration-none | bi-twitch" href="https://m.twitch.tv/videos/1449972458" target="_blank"> Twitch</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg | d-grid | mt-3">
+                <h2 class="h6 | border-bottom">Bibliografia</h2>
+                <a class="link-light text-decoration-none | bi-pencil" href="https://alumni.education" target="_blank"> Alumni</a>
+                <a class="link-light text-decoration-none | bi-book" href="https://alistapart.com/article/responsive-web-design/" target="_blank"> A List Apart</a>
+                <a class="link-light text-decoration-none | bi-bootstrap" href="https://getbootstrap.com" target="_blank"> Bootstrap</a>
+                <a class="link-light text-decoration-none | bi-github" href="https://github.com/c215714n/responsive-design" target="_blank"> GitHub</a>
+                <a class="link-light text-decoration-none | bi-globe" href="https://www.w3schools.com/bootstrap5/" target="_blank"> W3Schools</a>
+                <a class="link-light text-decoration-none | bi-wordpress" href="https://es.wikipedia.org/wiki/Bootstrap_(framework)" target="_blank"> Wikipedia</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg | d-grid | mt-3">
+                <h2 class="h6 | border-bottom">Redes Sociales</h2>
+                <a class="link-light text-decoration-none | bi-facebook" href="https://facebook.com/racedocristian/" target="_blank"> Facebook</a>
+                <a class="link-light text-decoration-none | bi-instagram" href="https://www.instagram.com/racedo.cristiandamian/" target="_blank"> Instagram</a>
+                <a class="link-light text-decoration-none | bi-twitter" href="https://twitter.com/Racedo_Cristian" target="_blank"> Twitter</a>
+                <a class="link-light text-decoration-none | bi-linkedin" href="https://linkedin.com/in/racedocristian/" target="_blank"> LinkedIn</a>
+                <a class="link-light text-decoration-none | bi-tiktok" href="https://www.tiktok.com/@cristian.racedo" target="_blank"> Tik Tok</a>
+                <a class="link-light text-decoration-none | bi-youtube" href="https://youtube.com/user/CR15T14ND4M14N/" target="_blank"> YouTube</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg | d-grid | mt-3">
+                <h2 class="h6 | border-bottom">Proyectos</h2>
+                <a class="link-light text-decoration-none | bi-chat-right-text" href="https://github.com/twbs/bootstrap/discussions" target="_blank"> Discusiones</a>
+                <a class="link-light text-decoration-none | bi-folder-fill" href="https://github.com/twbs/icons" target="_blank"> Iconos</a>
+                <a class="link-light text-decoration-none | bi-coin" href="https://github.com/sponsors/twbs" target="_blank"> Patrocinio</a>
+                <a class="link-light text-decoration-none | bi-record-circle" href="https://github.com/twbs/bootstrap/issues" target="_blank"> Problemas</a>
+                <a class="link-light text-decoration-none | bi-box" href="https://github.com/twbs/bootstrap-npm-starter" target="_blank"> NodeJS npm</a>
+                <a class="link-light text-decoration-none | bi-file-font" href="https://github.com/twbs/rfs" target="_blank"> Tipografias</a>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg | d-grid | mt-3">
+                <h2 class="h6 | border-bottom">Otros Sitios</h2>
+                <a class="link-light text-decoration-none | bi-rss" href="https://blog.educacionit.com/" target="_blank"> Blog</a>
+                <a class="link-light text-decoration-none | bi-explicit" href="https://www.educacionit.com/curso-de-responsive-design" target="_blank"> EducacionIT</a>
+                <a class="link-light text-decoration-none | bi-briefcase" href="https://empleos.educacionit.com/" target="_blank"> Empleos</a>
+                <a class="link-light text-decoration-none | bi-body-text" href="https://www.educacionit.com/experiencias" target="_blank"> Experiencias</a>
+                <a class="link-light text-decoration-none | bi-pencil-square" href="https://www.istea.edu.ar/tecnicatura-superior-en-desarrollo-de-software" target="_blank"> ISTEA</a>
+                <a class="link-light text-decoration-none | bi-question-square" href="https://www.educacionit.com/preguntas-frecuentes" target="_blank"> Preguntas</a>
+            </div>
+        </section>
         <!-- Derechos de Autor -->
-        <p class="m-0 opacity-75"> 
+        <p class="mt-3 mb-0 opacity-75"> 
             &copy;2022 Todos los derechos reservados | 
             <button class="btn btn-outline-light border-0 | py-0 p-1"
                 data-bs-target="#copyright"
@@ -459,7 +521,7 @@
         </p>
         <!-- Informacion de Contacto -->
         <div id="copyright" class="modal fade">
-            <section class="modal-dialog modal-content | text-start text-secondary">
+            <section class="modal-dialog modal-content | text-start text-secondary | mx-auto">
                 <header class="modal-header pb-1">
                     <h2 class="h3">Buenas ¿como estas?</h2>
                     <button class="btn-close" data-bs-dismiss="modal"></button>
