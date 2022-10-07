@@ -96,8 +96,10 @@
         </div>
     </header>
     <!-- Contenido Principal -->
-    <main class="container-md row | mb-5 mx-auto">
+    <main class="container-md row | mx-auto">
+        <!-- Pestaña de Contenidos -->
         <div class="tab-content col-lg-8 order-lg-first | me-lg-3 p-0">
+            <!-- Introduccion -->
             <section id="intro-section" class="tab-pane fade show active | my-3 rounded p-4 shadow">
                 <header>
                     <h2>Introduccion a Bootstrap</h2>
@@ -135,6 +137,7 @@
                     <li class="list-group-item">Por defecto trae anchos, márgenes, altos de línea y realiza cambios específicos.</li>
                 </ul>
             </section>
+            <!-- Breakpoints -->
             <section id="responsive-section" class="tab-pane fade | my-3 rounded p-4 shadow">
                 <header>
                     <h2>Responsive Breakpoints</h2>
@@ -195,6 +198,7 @@
                     </table>
                 </div>
             </section>
+            <!-- Sistema de Grillas -->
             <section id="grid-section" class="tab-pane fade | my-3 rounded p-4 shadow">
                 <header>
                     <h2>Sistema de Grillas</h2>
@@ -304,6 +308,68 @@
                 </ul>
             </section>
         </div>
+        <!-- Lista de Versiones -->
+        <section id="versions" class="row | mb-5 pt-3 mx-auto rounded | shadow">
+            <h2>Registro de Versiones</h2>
+            <div class="col-sm-12 col-lg-6 | p-3">
+                <h3>v5.x</h3>
+                <p>
+                    Documentos rediseñados, variables CSS para todos los componentes, offcanvas responsive, asistentes y utilidades nuevos, botones e entradas refinados y muchas mejoras internas.
+                </p>
+                <ul class="list-group list-group">
+                    <li class="list-group-item | d-flex justify-content-between">5.2<span class="badge bg-primary">ultima</span></li>
+                    <li class="list-group-item">5.1</li>
+                    <li class="list-group-item">5.0</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-6 | p-3">
+                <h3>v4.x</h3>
+                <p>
+                    El cambio más grande es una reimplementación de las funciones de división Sass y actualizaciones de v5, así como algunas mejoras de accesibilidad y correcciones de errores generales.
+                </p>
+                <ul class="list-group list-group">
+                    <li class="list-group-item">4.6</li>
+                    <li class="list-group-item">4.5</li>
+                    <li class="list-group-item">4.4</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4 | p-3">
+                <h3>v3.x</h3>
+                <p>
+                    Compilado con SASS, aborda actualizaciones de documentación y correcciones de errores CSS, más de 180 commits, 100 problemas cerrados y solicitudes de casi 30 colaboradores.
+
+                </p>
+                <ul class="list-group list-group">
+                    <li class="list-group-item">3.4.1</li>
+                    <li class="list-group-item">3.3.7</li>
+                    <li class="list-group-item">3.1.0</li>
+                </ul>
+            </div>
+            <div class="col-sm-6 col-lg-4 | p-3">
+                <h3>v2.x</h3>
+                <p>
+                    Gran actualización que resuelve toneladas de errores, mejora la flexibilidad y la durabilidad del código. Es un gran lanzamiento envuelto en un nuevo conjunto de documentos.
+                </p>
+                <ul class="list-group list-group">
+                    <li class="list-group-item">2.3.2</li>
+                    <li class="list-group-item">2.2.2</li>
+                    <li class="list-group-item">2.1.1</li>
+                </ul>
+            </div>
+            <div class="col-sm col-lg-4 | p-3">
+                <h3>v1.x</h3>
+                <p>
+                    Compilado con LESS y diseñado para impulsar el desarrollo de sitios y aplicaciones web con CSS y HTML para tipografía, formularios, botones, tablas, cuadrículas, navegacion y mas.
+                </p>
+                <ul class="list-group list-group">
+                    <li class="list-group-item">1.4.0</li>
+                    <li class="list-group-item">1.3.0</li>
+                    <li class="list-group-item">1.2.0</li>
+                    <li class="list-group-item">1.1.1</li>
+                </ul>
+            </div>
+        </section>
+        <!-- Tabla de Contenidos -->
         <aside class="col-lg order-first | my-3 rounded p-4 | shadow">
             <header>
                 <h2>Tabla de Contenidos</h2>
@@ -330,67 +396,6 @@
             </div>
         </aside>
     </main>
-    <!-- Lista de Versiones -->
-    <section id="versions" class="container-md row gap-3 | mb-5 pt-3 mx-auto rounded">
-        <h2>Registro de Versiones</h2>
-        <div class="col-sm-12 col-lg-6 | rounded p-3 | shadow-lg">
-            <h3>v5.x</h3>
-            <p>
-                Documentos rediseñados, variables CSS para todos los componentes, offcanvas responsive, asistentes y utilidades nuevos, botones e entradas refinados y muchas mejoras internas.
-            </p>
-            <ul class="list-group list-group">
-                <li class="list-group-item | d-flex justify-content-between">5.2<span class="badge bg-primary">ultima</span></li>
-                <li class="list-group-item">5.1</li>
-                <li class="list-group-item">5.0</li>
-            </ul>
-        </div>
-        <div class="col-sm-6 col-lg | rounded p-3 | shadow-lg">
-            <h3>v4.x</h3>
-            <p>
-                El cambio más grande es una reimplementación de las funciones de división Sass y actualizaciones de v5, así como algunas mejoras de accesibilidad y correcciones de errores generales.
-            </p>
-            <ul class="list-group list-group">
-                <li class="list-group-item">4.6</li>
-                <li class="list-group-item">4.5</li>
-                <li class="list-group-item">4.4</li>
-            </ul>
-        </div>
-        <div class="col-sm col-lg-4 | rounded p-3 | shadow-lg">
-            <h3>v3.x</h3>
-            <p>
-                Compilado con SASS, aborda actualizaciones de documentación y docenas de correcciones de errores CSS, más de 180 commits, 100 problemas cerrados y solicitudes de casi 30 colaboradores.
-
-            </p>
-            <ul class="list-group list-group">
-                <li class="list-group-item">3.4.1</li>
-                <li class="list-group-item">3.3.7</li>
-                <li class="list-group-item">3.1.0</li>
-            </ul>
-        </div>
-        <div class="col-sm-6 col-lg-4 | rounded p-3 | shadow-lg">
-            <h3>v2.x</h3>
-            <p>
-                Gran actualización que resuelve toneladas de errores, mejora la flexibilidad y la durabilidad del código. Es un gran lanzamiento envuelto en un nuevo conjunto de documentos.
-            </p>
-            <ul class="list-group list-group">
-                <li class="list-group-item">2.3.2</li>
-                <li class="list-group-item">2.2.2</li>
-                <li class="list-group-item">2.1.1</li>
-            </ul>
-        </div>
-        <div class="col-sm col-lg | rounded p-3 | shadow-lg">
-            <h3>v1.x</h3>
-            <p>
-                Compilado con LESS y diseñado para impulsar el desarrollo de sitios y aplicaciones web con CSS y HTML para tipografía, formularios, botones, tablas, cuadrículas, navegacion y mucho mas.
-            </p>
-            <ul class="list-group list-group">
-                <li class="list-group-item">1.4.0</li>
-                <li class="list-group-item">1.3.0</li>
-                <li class="list-group-item">1.2.0</li>
-                <li class="list-group-item">1.1.1</li>
-            </ul>
-        </div>
-    </section>
     <!-- Seccion de Contacto -->
     <section id="contact" class="position-relative | bg-dark | pt-5">
         <!-- Mapa de Contacto -->
