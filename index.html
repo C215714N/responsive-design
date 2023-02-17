@@ -474,7 +474,7 @@
                     maxlength="200"
                     placeholder="Consulta(*): Buenas, necesito un presupuesto"
                     required></textarea>
-                <label for="">Ingrese su Consulta</label>
+                <label for="contact_consult">Ingrese su Consulta</label>
                 <div class="valid-feedback">
                     No vamos a decirte que preguntar, ni como hacerlo ¡felicitaciones!
                 </div>
@@ -485,37 +485,68 @@
             <button class="btn btn-lg btn-outline-primary | ms-auto p-1 px-4 | text-uppercase">Enviar</button>
         </form>
         <!-- Redes sociales -->
-        <section class="position-relative | d-flex justify-content-center flex-wrap | bg-light bg-gradient opacity-75 | mt-3 p-3 pb-5 | fs-1">
-            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-facebook"
+        <section class="position-relative | d-flex justify-content-center flex-wrap gap-2 | bg-light bg-gradient opacity-75 | mt-3 p-3 pb-5">
+            <h2 class="visually-hidden">Redes sociales</h2>
+            <a class="btn btn-outline-primary | rounded px-3 | bi-facebook fs-2"
                 href="https://www.facebook.com/RacedoCristian"
                 target="_blank">
             </a>
-            <a class="btn-outline-danger | mx-1 rounded px-2 | bi-instagram"
+            <a class="btn btn-outline-danger | rounded px-3 | bi-instagram fs-2"
                 href="https://www.instagram.com/racedo.cristiandamian/"
                 title="Seguinos en instagram"
                 target="_blank">
             </a>
-            <a class="btn-outline-success | mx-1 rounded px-2 | bi-whatsapp"
+            <a class="btn btn-outline-success | rounded px-3 | bi-whatsapp fs-2"
                 href="https://api.whatsapp.com/send?phone=549111556591548&text=%22Buenos%20dias,%20necesito%20un%20presupuesto%22"
                 title="Envianos un Whatsapp"
                 target="_blank">
             </a>
-            <a class="btn-outline-info | mx-1 rounded px-2 | bi-twitter"
+            <a class="btn btn-outline-info | rounded px-3 | bi-twitter fs-2"
                 href="https://twitter.com/Racedo_Cristian" 
                 title="Seguinos en twitter"
                 target="_blank">
             </a>
-            <a class="btn-outline-danger | mx-1 rounded px-2 | bi-youtube"
+            <a class="btn btn-outline-danger | rounded px-3 | bi-youtube fs-2"
                 href="https://www.youtube.com/user/CR15T14ND4M14N/" 
                 title="Suscribite al canal de YouTube"
                 target="_blank">
             </a>
-            <a class="btn-outline-primary | mx-1 rounded px-2 | bi-linkedin" 
+            <a class="btn btn-outline-primary | rounded px-3 | bi-linkedin fs-2"
                 href="https://www.linkedin.com/in/racedocristian/"
                 title="Seguinos en Linkedin"
                 target="_blank">
             </a>
         </section>
+    </section>
+    <!-- Informacion de Contacto -->
+    <section id="copyright" class="modal fade">
+        <div class="modal-dialog modal-content | text-start text-secondary | mx-auto">
+            <header class="modal-header pb-1">
+                <h2 class="h3">Buenas ¿como estas?</h2>
+                <button class="btn-close" data-bs-dismiss="modal"></button>
+            </header>
+            <div class="modal-body">
+                <p>
+                    Mi nombre es <strong>Cristian Racedo</strong> y mis origenes como desarrollador se remontan al <em>año 2012 cuando realice mis primeros proyectos</em> y descubri mi pasion por esta actividad.
+                </p>
+                <p>
+                    En mis ratos libres ejerzo como <strong>diseñador freelance</strong> y <strong>técnico informático</strong>, mientras pretendo mejorar mis conocimientos en programación realizando <em>cursos a distancia.</em> 
+                </p>
+                <p>
+                    También quiero aumentar mi experiencia trabajando con servidores, principalmente para mejorar mis conocimientos en el campo de <strong>redes y seguridad informática.</strong> 
+                </p>
+                <p>
+                    Recorda que podes realizar cualquier consulta que necesites, ya sea completando el formulario o abriendo tu correo electronico desde esta misma ventana. 
+                </p>
+                <p>
+                    Muchas gracias por tu interes y encantado de conocerte
+                </p>
+            </div>
+            <footer class="modal-footer">
+                <a class="btn btn-danger" data-bs-dismiss="modal">Cancelar</a>
+                <a class="btn btn-success" href="mailto:cristiandracedo@hotmail.com">Abrir correo</a>
+            </footer>
+        </div>
     </section>
     <!-- Pie de Pagina -->
     <footer id="footer" class="position-relative | text-light bg-dark | p-2 | text-center">
@@ -533,7 +564,7 @@
                 <a class="link-light text-decoration-none | bi-image" href="gallery.html" target="_blank"> Galeria</a>
                 <a class="link-light text-decoration-none | bi-person-circle" href="#contact" target="_blank"> Contacto</a>
                 <a class="link-light text-decoration-none | bi-envelope" href="mailto:cristiandracedo@hotmail.com" target="_blank"> Correo</a>
-                <a class="link-light text-decoration-none | bi-whatsapp" href="https://api.whatsapp.com/send?phone=1156591548&text=Buenas, mi consulta es ..." target="_blank"> Whatsapp</a>
+                <a class="link-light text-decoration-none | bi-whatsapp" href="https://api.whatsapp.com/send?phone=1156591548&text=Buenas,%20mi%20consulta%20es%20..." target="_blank"> Whatsapp</a>
             </div>
             <div class="col-sm-6 col-md-4 col-lg | d-grid gap-1 | mt-3">
                 <h2 class="h6 | m-0 border-bottom p-1">Comunidad</h2>
@@ -590,36 +621,6 @@
             </button> 
             &amp; Compañia
         </p>
-        <!-- Informacion de Contacto -->
-        <div id="copyright" class="modal fade">
-            <section class="modal-dialog modal-content | text-start text-secondary | mx-auto">
-                <header class="modal-header pb-1">
-                    <h2 class="h3">Buenas ¿como estas?</h2>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </header>
-                <div class="modal-body">
-                    <p>
-                        Mi nombre es <strong>Cristian Racedo</strong> y mis origenes como desarrollador se remontan al <em>año 2012 cuando realice mis primeros proyectos</em> y descubri mi pasion por esta actividad.
-                    </p>
-                    <p>
-                        En mis ratos libres ejerzo como <strong>diseñador freelance</strong> y <strong>técnico informático</strong>, mientras pretendo mejorar mis conocimientos en programación realizando <em>cursos a distancia.</em> 
-                    </p>
-                    <p>
-                        También quiero aumentar mi experiencia trabajando con servidores, principalmente para mejorar mis conocimientos en el campo de <strong>redes y seguridad informática.</strong> 
-                    </p>
-                    <p>
-                        Recorda que podes realizar cualquier consulta que necesites, ya sea completando el formulario o abriendo tu correo electronico desde esta misma ventana. 
-                    </p>
-                    <p>
-                        Muchas gracias por tu interes y encantado de conocerte
-                    </p>
-                </div>
-                <footer class="modal-footer">
-                    <a class="btn btn-danger" data-bs-dismiss="modal">Cancelar</a>
-                    <a class="btn btn-success" href="mailto:cristiandracedo@hotmail.com">Abrir correo</a>
-                </footer>
-            </section>
-        </div>
     </footer>
     <!-- Bootstrap JS -->
     <script src="scripts/bootstrap.bundle.js"></script>
