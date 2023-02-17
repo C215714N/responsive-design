@@ -111,12 +111,12 @@
                 <p>
                     Este <strong>Framework</strong> posee definiciones de <em>media queries y porcentajes en su CSS para hacer una web Responsive.</em> Además, se basa en la simplicidad de sus interfaces, lo cual es una tendencia del mercado, en las que tiende a diseño plano, botones grandes, etc… <strong>para facilitar la usabilidad en los dispositivos más pequeño, atendiendo a la Experiencia de Usuario.</strong>
                 </p>
-                <h3 class="accordion-button collapsed"
+                <h3 class="accordion accordion-button collapsed"
                     data-bs-target="#bs-advantages" 
                     data-bs-toggle="collapse">
                     Ventajas
                 </h3>
-                <ul id="bs-advantages" class="accordion-item collapse | list-group | mb-3">
+                <ul id="bs-advantages" class="accordion-item collapse | list-group list-group-flush | mb-3">
                     <li class="list-group-item">Se puede diseñar un sitio combinandolo con HTML, CSS y Javascript.</li>
                     <li class="list-group-item">Incluye un sistema de grillas útil para maquetar por columnas.</li>
                     <li class="list-group-item">Sus plantillas son de sencilla adaptación responsive.</li>
@@ -124,12 +124,12 @@
                     <li class="list-group-item">Cuenta con una documentación completa para su aprendizaje.</li>
                     <li class="list-group-item">Facilita el diseño de interfaces y además incluye una plantilla optimizada.</li>
                 </ul>
-                <h3 class="accordion-button collapsed"
+                <h3 class="accordion accordion-button collapsed"
                     data-bs-target="#bs-disadvantages" 
                     data-bs-toggle="collapse">
                     Desventajas
                 </h3>
-                <ul id="bs-disadvantages" class="accordion-item collapse | list-group | mb-3">
+                <ul id="bs-disadvantages" class="accordion-item collapse | list-group list-group-flush | mb-3">
                     <li class="list-group-item">Incluir el framework en un trabajo iniciado puede ser tedioso y molesto.</li>
                     <li class="list-group-item">Es complicado cambiar de versión si realizaron modificaciones profundas.</li>
                     <li class="list-group-item">No es ligero y para algunas funcionalidades se debe usar Javascript y jQuery.</li>
@@ -211,7 +211,7 @@
                     Bootstrap posee un modelo de <strong>12 columnas</strong> <em>invisibles para el usuario</em>, que facilita el diseño y desarrollo de aplicaciones y sitios web. 
                     Son un punto de partida que permiten diagramar la página con el uso de módulos utilizando la clase <strong>col</strong>, opcionalmente el breakpoint, y el numero de columnas a ocupar.
                 </p>
-                <h3 class="h4">
+                <h3 class="h5">
                     Columnas 
                     <span class="d-sm-none">xs</span>
                     <span class="d-none d-sm-inline d-md-none">Small</span>
@@ -264,7 +264,7 @@
                         <span class="d-none d-lg-inline">-lg-2</span>
                     </li>
                 </ul>
-                <h3 class="h4">Desplazar columnas</h3>
+                <h3 class="h5">Desplazar columnas</h3>
                 <p>
                     En caso que necesitemos Compensar un espacio aumentando la separacion entre columnas o simplemente quisieramos desplazarla hacia la derecha, podemos utilizar la clase <strong>offset</strong> que basicamente aumenta el margen izquierdo en un valor igual al porcentaje del numero de columna seleccionado.
                 </p>
@@ -304,6 +304,61 @@
                         <span class="d-none d-sm-inline d-md-none">-sm-6</span> 
                         <span class="d-none d-md-inline d-lg-none">-md-4</span> 
                         <span class="d-none d-lg-inline">-lg-2</span>
+                    </li>
+                </ul>
+            </section>
+            <!-- Instalacion -->
+            <section id="start-section" class="tab-pane fade | my-3 rounded p-4 shadow">
+                <header>
+                    <h2>Configuracion Inicial</h2>
+                    <p>Instalacion y uso de CDN</p>
+                </header>
+                <h3>JsDelivr</h3>
+                <p>
+                    Es una <strong>Red Publica de Distribucion de Contenido</strong> para proyectos de software de código abierto, se encuentra estrechamente integrada con Github y NPM, proporcionando automáticamente un servicio confiable para casi todos los proyectos de código abierto que existen.
+                </p>
+                <p>
+                    Gracias al CDN se puede omitir la descarga del codigo fuente utilizando una <strong>version en caché de CSS y JS</strong> compilados de Bootstrap. Los desarrolladores pueden acceder a los archivos de BootstrapCDN utilizando los siguientes enlaces.
+                </p>
+                <p class="overflow-auto bg-dark | rounded-2 p-3">
+                    <code class="text-nowrap">
+                        &lt;link
+                        <span class="text-warning"> href=</span><span class="link-info">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"</span> 
+                        <span class="text-warning">rel=</span><span class="link-info">"stylesheet"</span> 
+                        <span class="text-warning">integrity=</span><span class="link-info">"sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"</span> 
+                        <span class="text-warning">crossorigin=</span><span class="text-info">"anonymous"</span>&gt;
+                    </code>
+                    <code class="text-nowrap">
+                        &lt;script 
+                        <span class="text-warning">src=</span><span class="link-info">"https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"</span>
+                        <span class="text-warning">integrity=</span><span class="link-info">"sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"</span>
+                        <span class="text-warning">crossorigin=</span><span class="link-info">"anonymous"</span>>&lt;/script>
+                    </code>
+                </p>
+                <h3>Package Managers</h3>
+                <p>
+                    Utilizando cualquier <strong>Gestor de Paquetes</strong> podemos descargar Bootstrap para obtener <em> el código fuente, los archivos CSS y JavaScript compilados, ademas de los archivos minificados.</em> Esto es muy util si necesitamos los archivos base para editarlos o evitar una conexion de origen cruzado. 
+                </p>
+                <ul class="list-unstyled | bg-dark rounded-2">
+                    <li class="row | text-light bg-transparent | m-0 border-bottom p-2">
+                        <strong class="col-sm-3">npm</strong>
+                        <code class="d-flex justify-content-between | col-11 col-sm">npm install bootstrap</code>
+                    </li>
+                    <li class="row | text-light bg-transparent | m-0 border-bottom p-2">
+                        <strong class="col-sm-3">yarn</strong>
+                        <code class="d-flex justify-content-between | col-11 col-sm">yarn add bootstrap</code>
+                    </li>
+                    <li class="row | text-light bg-transparent | m-0 border-bottom p-2">
+                        <strong class="col-sm-3">Bundler</strong>
+                        <code class="d-flex justify-content-between | col-11 col-sm">gem install bootstrap</code>
+                    </li>
+                    <li class="row | text-light bg-transparent | m-0 border-bottom p-2">
+                        <strong class="col-sm-3">Composer</strong>
+                        <code class="d-flex justify-content-between | col-11 col-sm">composer require twbs/bootstrap</code>
+                    </li>
+                    <li class="row | text-light bg-transparent | m-0 border-bottom p-2">
+                        <strong class="col-sm-3">NuGet</strong>
+                        <code class="d-flex justify-content-between | col-11 col-sm">Install-Package bootstrap</code>
                     </li>
                 </ul>
             </section>
@@ -391,6 +446,12 @@
                     href="#grid-section"
                     data-bs-toggle="list">
                     Sistema de Grillas
+                </a>
+                <a id="start-menu"
+                    class="list-group-item list-group-item-action"
+                    href="#start-section"
+                    data-bs-toggle="list">
+                    Configuracion Inicial
                 </a>
             </div>
         </aside>
